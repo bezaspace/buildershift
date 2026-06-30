@@ -6,6 +6,7 @@ import TweetFeed from "./components/TweetFeed";
 import CommunitySections from "./components/CommunitySections";
 import Footer from "./components/Footer";
 import AuthModal from "./components/AuthModal";
+import OnboardingModal from "./components/OnboardingModal";
 import { AuthModalProvider, useAuthModal } from "./context/AuthModalContext";
 import db from "./lib/db";
 
@@ -22,6 +23,7 @@ export default function App() {
     <AuthModalProvider>
       <AppContent />
       <AuthModal />
+      <OnboardingModal />
     </AuthModalProvider>
   );
 }

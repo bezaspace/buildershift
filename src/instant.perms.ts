@@ -21,6 +21,14 @@ const rules = {
       name: "true",
       joinedAt: "true",
       imageURL: "true",
+      // Onboarding responses are private to the owner.
+      onboardingCompleted: "auth.id == data.id",
+      onboardingSkipped: "auth.id == data.id",
+      role: "auth.id == data.id",
+      buildInterests: "auth.id == data.id",
+      experienceLevel: "auth.id == data.id",
+      goals: "auth.id == data.id",
+      stack: "auth.id == data.id",
     },
   },
 } satisfies InstantRules;

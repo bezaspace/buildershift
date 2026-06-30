@@ -20,6 +20,14 @@ const _schema = i.schema({
       type: i.string().optional(),
       name: i.string().optional(),
       joinedAt: i.number().indexed().optional(),
+      // Onboarding fields (collected on first signup, all optional/skippable)
+      onboardingCompleted: i.boolean().optional(),
+      onboardingSkipped: i.boolean().optional(),
+      role: i.string().optional(),
+      buildInterests: i.json().optional(),
+      experienceLevel: i.string().optional(),
+      goals: i.json().optional(),
+      stack: i.json().optional(),
     }),
   },
   links: {
